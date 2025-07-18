@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: coral;
+  text-align: center;
+  padding: 2px;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+}
+
+.recipe {
+  border-radius: 16px;
+  padding: 20px;
+  margin: 12px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.recipe:hover {
+  transform: scale(1.04);
+}
+
+/* Different colors for each tab */
+.tab1 { background-color: #ffcccb; color: #000; }
+.tab2 { background-color: #ffd966; color: #000; }
+.tab3 { background-color: #a2d2ff; color: #000; }
+.tab4 { background-color: #d6a2e8; color: #000; }
+.tab5 { background-color: #f7c59f; color: #000; }
+.tab6 { background-color: #caffbf; color: #000; }
+.tab7 { background-color: #ffb3c1; color: #000; }
+.tab8 { background-color: #b5ead7; color: #000; }
+
+.foot {
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  
+  color: white;
+  font-size: 28px;
+  padding: 0px 0px;
+  border-radius: 20%;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+.whatsapp-float:hover {
+  background-color: #1ebe5c;
+}

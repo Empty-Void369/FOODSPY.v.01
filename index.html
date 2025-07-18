@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOODSPY</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="nav">
+    <nav><p>🥘 FOODSPY</p></nav>
+  </div>
+
+  <hr color="brown">
+
+  <!-- Unique tabs -->
+  <div class="recipe tab1" data-recipe="aloo-paratha"><h2>Aloo Paratha</h2></div>
+  <div class="recipe tab2" data-recipe="chicken-curry"><h2>Chicken Curry</h2></div>
+  <div class="recipe tab3" data-recipe="butter-chicken"><h2>Butter Chicken</h2></div>
+  <div class="recipe tab4" data-recipe="upma"><h2>Upma</h2></div>
+  <div class="recipe tab5" data-recipe="white-sauce-pasta"><h2>White sauce pasta</h2></div>
+  <div class="recipe tab6" data-recipe="paneer-butter-masala"><h2>Paneer Butter Masala</h2></div>
+  <div class="recipe tab7" data-recipe="veg-pizaa"><h2>veg pizza</h2></div>
+  <div class="recipe tab8" data-recipe="chicken-biryani"><h2>Chicken biryani</h2></div>
+
+  <div class="foot">
+    <hr color="#61bab4">
+    <footer>©️ All Rights Reserved <br>Created By - Sani ☀️</footer>
+  </div>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/918822004700" class="whatsapp-float" target="_blank">💬</a>
+
+  <!-- Tab to recipe logic -->
+  <script>
+    document.querySelectorAll('.recipe').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const id = tab.dataset.recipe;
+        window.location.href = `recipes.html#${id}`;
+      });
+    });
+  </script>
+
+</body>
+</html>
